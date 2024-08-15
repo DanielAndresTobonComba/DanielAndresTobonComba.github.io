@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
-.flex {
-    display: flex;
+
+.block {
+    display: block;
+}
+
+#espacioMenu{
+    margin-bottom: 250px;
 }
 
 nav {
@@ -13,11 +18,17 @@ nav {
     right: 0;
     margin: 0;
     padding: 20px;
-    height: 100px;
+    background-color: orange;   
+    align-items: center;
+    
+   
 }
 
 nav * {
     align-self: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 #menuPrincipal{
@@ -25,6 +36,8 @@ nav * {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+/* SOBRE MI */
 
 #contenedor-sobreMi{
     
@@ -43,6 +56,38 @@ nav * {
     height: 400px;
     width: 400px;
     border-radius: 100%;
+}
+
+
+/* MISION-VISION */
+
+#contenedorVision-mision{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border: solid orange;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.titulosVisionMision {
+    color: black;
+    
+    
+}
+
+.visionMision{
+    width: 350px;
+    margin: auto;
+    
+}
+
+.visionMision h2 {
+    text-align: center;
+}
+
+.visionMision p {
+    text-align: justify;
 }
 
 /* HABILIDADES TECNICAS - BLANDAS */
@@ -96,11 +141,135 @@ nav * {
 }
 
 
+
+
 h3{
     text-decoration: none;
     font-weight: 500;
     font-style: italic;
     color:white;
     /* margin: auto; */
+
+}
+
+
+
+/* MIS OJETIVOS - AMBICIONES */
+
+#contenedorAmbiciones{
+    width: 80%;
+    margin: auto;
+    border: solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ambiciones{
+    flex-direction: column;
+    width: 300px;
+    border: solid;
+    margin: 10px;
+}
+
+.ambicion {
+    display: flex;
+}
+
+.imgAmbiciones {
+    border-radius: 100%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px 20px ;
+    padding: 3px;
+}
+
+
+
+.ambiciones h3 {
+    color: black;
+    margin: auto;
+}
+
+
+.ambiciones p {
+    margin: 10px;
+}
+
+#o {
+    margin: auto;
+}
+
+#tituloAmbiciones {
+    color: black;
+    text-align: center;
+    width: 80%;
+   margin: 20px  auto;
+    
+}
+
+@media only screen and (max-width: 700px) {
+
+    #espacioMenu{
+        margin-bottom: 150px;
+    }
+
+    
+    #contenedor-sobreMi{
+
+        flex-direction: column-reverse;
+        margin:  50px  auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobreMi{
+    
+    width: 80%;
+    border: solid;
+    margin: 50px 0% 100px 0%;
+}
+
+    #profile {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+    }
+
+
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    #espacioMenu{
+        margin-bottom: 250px;
+    }
+
+    #menuPrincipal {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 10px 0; /* Ajusta el padding si es necesario */
+        gap: 5px;
+    }
+
+
+    #contenedor-sobreMi{
+
+        margin: 100px 50px  auto;
+
+    }
+
+    #sobreMi{
+    
+        width: 100%;
+
+    }
+
+    nav * {
+        font-size: 18px;
+    }
 
 }
