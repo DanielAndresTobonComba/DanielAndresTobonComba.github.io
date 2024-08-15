@@ -1,5 +1,15 @@
+
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
 *{
     box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 
 
@@ -131,7 +141,7 @@ nav * {
 }
 
 
-.imgHabilidad{
+.imgHabilidad , .imgTecnologias , .imagenContactos  {
     border-radius: 100%;
     background-color: white;
     width: 50px;
@@ -139,6 +149,7 @@ nav * {
     margin: 0px 20px 0px 10px ;
     padding: 3px;
 }
+
 
 
 
@@ -181,7 +192,7 @@ h3{
     background-color: white;
     width: 50px;
     height: 50px;
-    margin: 0px 0px 0px 20px ;
+    margin: 0px 0px 0px 10px ;
     padding: 3px;
 }
 
@@ -209,38 +220,88 @@ h3{
     
 }
 
-@media only screen and (max-width: 700px) {
+/* PROJECTOS */
+#tituloProyectos {
+    text-align: center;
+    font-size:35px;
+}
 
-    #espacioMenu{
-        margin-bottom: 150px;
-    }
-
-    
-    #contenedor-sobreMi{
-
-        flex-direction: column-reverse;
-        margin:  50px  auto;
-        align-items: center;
-        text-align: center;
-    }
-
-    #sobreMi{
-    
+#contenedorProjectos{
     width: 80%;
-    border: solid;
-    margin: 50px 0% 100px 0%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-    #profile {
-        height: 200px;
-        width: 200px;
-        border-radius: 100%;
-    }
+.projecto {
+    width: 250px;
+    margin: auto;
+    margin: 15px;
+}
+
+.projecto a{
+    display: flex;
+    justify-content: center;
+
+}
 
 
+.projecto h2{
+    text-align: center;
+
+}
+
+.projecto h3{
+    text-align: center;
+    color: black;
+
+}
+
+.projecto p{
+    text-align: justify;
     
 }
 
+.tecnologiasUsadas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Contacto */
+
+#contenedorContacto {
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: solid orange;
+
+
+}
+
+.contacto{
+    
+    display:  flex; 
+    flex-direction: row;
+    margin: auto;
+    
+}
+
+
+.imagenContactos  {
+    border-radius: 100%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: auto ;
+    
+}
+
+/* RESPONSIVE */
 
 @media only screen and (max-width: 550px) {
 
@@ -273,3 +334,52 @@ h3{
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    #espacioMenu{
+        margin-bottom: 350px;
+    }
+
+    
+    #contenedor-sobreMi{
+
+        flex-direction: column-reverse;
+        margin:  50px  auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    #sobreMi{
+    
+    width: 80%;
+    border: solid;
+    margin: 50px 0% 100px 0%;
+}
+
+    #profile {
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+    }
+
+
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #profile{
+        
+        height: 300px;
+        width: 300px;
+
+    }
+
+}
+
+
+
+
+
+
+
