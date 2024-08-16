@@ -3,13 +3,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+#titulo , #subtitulo {
+    text-align: center;
+    font-size: 40px;
+}
 
 *{
     box-sizing: border-box;
     font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
   
+}
+
+p{
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
 }
 
 
@@ -18,7 +33,7 @@
 }
 
 #espacioMenu{
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 nav {
@@ -54,13 +69,35 @@ nav * {
     display: flex;
     flex-direction: row;
     margin: 10% 10% 10% 10%;
-    height: 500px;
 }
 
 #sobreMi{
     width: 50%;
-    margin-right: auto;
+    margin: auto;
+    text-align: justify;
+    
 }
+
+#sobreMi h1{
+
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#sobreMi h2{
+
+   text-align: center;
+    font-size: 35px;
+}
+
+#sobreMi p{
+
+    font-size: 20px;
+    
+}
+
+
 
 #profile {
     height: 400px;
@@ -221,6 +258,7 @@ h3{
 }
 
 /* PROJECTOS */
+
 #tituloProyectos {
     text-align: center;
     font-size:35px;
@@ -235,9 +273,20 @@ h3{
 }
 
 .projecto {
-    width: 250px;
-    margin: auto;
+    padding: 10px;
+    min-width: 250px;
+    max-width: 300px;
     margin: 15px;
+    border: solid;
+    border-radius: 30px;
+
+
+}
+
+.projecto:hover {
+    /* Tamaño al hacer hover */
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
+    box-shadow: 5px 10px 10px 1px orange;
 }
 
 .projecto a{
@@ -259,13 +308,28 @@ h3{
 }
 
 .projecto p{
-    text-align: justify;
+    text-align: center;
+    
+}
+
+.projecto a{
+    margin: 20px auto;
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
     
 }
 
 .tecnologiasUsadas {
     display: flex;
     justify-content: space-evenly;
+}
+
+.enlacesProjectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
 }
 
 
@@ -278,7 +342,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: solid orange;
+
 
 
 }
@@ -288,6 +352,7 @@ h3{
     display:  flex; 
     flex-direction: row;
     margin: auto;
+    gap: 0px 20px;
     
 }
 
@@ -305,21 +370,25 @@ h3{
 
 @media only screen and (max-width: 550px) {
 
-    #espacioMenu{
-        margin-bottom: 250px;
+    #titulo , #subtitulo {
+        font-size: 30px;
+    }
+
+    #subtitulo{
+        font-size: 25px;
     }
 
     #menuPrincipal {
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        padding: 10px 0; /* Ajusta el padding si es necesario */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 0; 
         gap: 5px;
     }
 
 
     #contenedor-sobreMi{
 
-        margin: 100px 50px  auto;
+        margin:  auto;
 
     }
 
@@ -329,17 +398,24 @@ h3{
 
     }
 
+    #sobreMi h2{
+    
+        font-size: 25px;
+
+    }
+
     nav * {
         font-size: 18px;
+    }
+
+    #espacioMenu{
+        margin-bottom: 150px;
     }
 
 }
 
 @media only screen and (max-width: 768px) {
 
-    #espacioMenu{
-        margin-bottom: 350px;
-    }
 
     
     #contenedor-sobreMi{
@@ -350,12 +426,18 @@ h3{
         text-align: center;
     }
 
+    
+
     #sobreMi{
     
     width: 80%;
-    border: solid;
-    margin: 50px 0% 100px 0%;
-}
+    margin: 50px 0 0 0 ;
+
+    }
+
+    #sobreMi p{
+        font-size: 20px;
+    }
 
     #profile {
         height: 250px;
@@ -374,6 +456,11 @@ h3{
         width: 300px;
 
     }
+
+    #espacioMenu{
+        margin-bottom: 100px;
+    }
+
 
 }
 
