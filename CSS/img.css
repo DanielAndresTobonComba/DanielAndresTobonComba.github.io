@@ -279,6 +279,7 @@ h3{
     margin: 15px;
     border: solid;
     border-radius: 30px;
+    transition: transform ease 0.5s ,box-shadow ease 0.5s ;
 
 
 }
@@ -287,6 +288,8 @@ h3{
     /* Tamaño al hacer hover */
     transform: scale(1.05); /* Aumenta el tamaño en un 5% */
     box-shadow: 5px 10px 10px 1px orange;
+    transition: transform ease 0.5s ,box-shadow ease 0.5s ;
+    
 }
 
 .projecto a{
