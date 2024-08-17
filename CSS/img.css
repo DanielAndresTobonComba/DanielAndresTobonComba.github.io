@@ -5,6 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body {
+    background-color: black;
+}
 
 #titulo , #subtitulo {
     text-align: center;
@@ -16,7 +19,8 @@
     font-family: "New Amsterdam", sans-serif;
     font-weight: 100;
     font-style: normal;
-  
+    transition: transform ease 0.5s ,box-shadow ease 0.5s ;
+    color: white;
 }
 
 p{
@@ -43,18 +47,31 @@ nav {
     right: 0;
     margin: 0;
     padding: 20px;
-    background-color: orange;   
+    background-color: black;   
     align-items: center;
-    
+    transition: box-shadow 0.3s ease;
+    z-index: 100;
    
 }
 
-nav * {
+#menuPrincipal a {
+    margin: auto;
+    transition: box-shadow 0.3s ease;
     align-self: center;
     text-decoration: none;
-    color: white;
+    color: orange;
     font-size: 18px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    background-color: none;
 }
+
+#menuPrincipal a:hover {
+    box-shadow: 1px 1px 10px 5px rgba(248, 112, 0, 0.3);
+    
+}
+
 
 #menuPrincipal{
     display: flex;
@@ -94,13 +111,13 @@ nav * {
 #sobreMi p{
 
     font-size: 20px;
-    
+    line-height: 30px;
 }
 
 
 
 #profile {
-    height: 400px;
+    height: 500px;
     width: 400px;
     border-radius: 100%;
 }
@@ -276,10 +293,12 @@ h3{
     padding: 10px;
     min-width: 250px;
     max-width: 300px;
-    margin: 15px;
-    border: solid;
+    margin: 35px;
     border-radius: 30px;
-    transition: transform ease 0.5s ,box-shadow ease 0.5s ;
+    height: 500px;
+    box-shadow: 0px 0px 45px -5px rgb(44, 42, 44);
+
+
 
 
 }
@@ -287,8 +306,9 @@ h3{
 .projecto:hover {
     /* Tamaño al hacer hover */
     transform: scale(1.05); /* Aumenta el tamaño en un 5% */
-    box-shadow: 5px 10px 10px 1px orange;
-    transition: transform ease 0.5s ,box-shadow ease 0.5s ;
+    box-shadow: 0px 0px 45px -10px rgb(187, 143, 24);
+
+    outline: solid rgb(202, 143, 32);
     
 }
 
@@ -311,16 +331,28 @@ h3{
 }
 
 .projecto p{
-    text-align: center;
-    
+    text-align: justify;
+    height: 200px;
+    line-height: 20px;
 }
 
 .projecto a{
     margin: 20px auto;
     text-decoration: none;
-    color: green;
+    color: black;
     font-size: 25px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.5s;
     
+}
+
+.projecto a:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: orange;
+    transition: background-color 0.5s;
 }
 
 .tecnologiasUsadas {
@@ -443,7 +475,7 @@ h3{
     }
 
     #profile {
-        height: 250px;
+        height: 320px;
         width: 250px;
         border-radius: 100%;
     }
@@ -455,7 +487,7 @@ h3{
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #profile{
         
-        height: 300px;
+        height: 350px;
         width: 300px;
 
     }
