@@ -122,8 +122,8 @@ nav {
 
 
 #profile {
-    height: 500px;
-    width: 400px;
+    height: 300px;
+    width: 250px;
     border-radius: 100%;
 }
 
@@ -514,6 +514,11 @@ h3{
 
     #espacioMenu{
         margin-bottom: 150px;
+    } 
+
+    #Profile {
+        height: 250px;
+        width: 200px;
     }
 
 }
