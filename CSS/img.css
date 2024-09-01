@@ -18,6 +18,8 @@ body {
     font-size: 50px;
 }
 
+
+
 *{
     box-sizing: border-box;
     font-family: "New Amsterdam", sans-serif;
@@ -130,7 +132,7 @@ nav {
 
 #profile {
     height: 300px;
-    width: 250px;
+    width: 300px;
     border-radius: 100%;
 }
 
@@ -241,6 +243,14 @@ nav {
 
 
     
+}
+
+.habilidad h3 {
+    text-transform: capitalize;
+    color: orange;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .habilidad:hover {
@@ -354,8 +364,14 @@ h3{
     box-shadow: 0px 0px 45px -5px rgb(44, 42, 44);
 
 
+}
 
-
+.projecto span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: orange;
+    
 }
 
 .imagenProjectos   {
@@ -397,7 +413,7 @@ h3{
 .projecto p{
     text-align: justify;
     height: 200px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     padding: 0px 7px;
 }
